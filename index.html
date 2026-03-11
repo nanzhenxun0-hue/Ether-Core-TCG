@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ether Core</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="game">
+
+<header>
+<h1>ETHER CORE</h1>
+</header>
+
+<nav>
+
+<button onclick="showScreen('home')">Home</button>
+<button onclick="showScreen('battle')">Battle</button>
+<button onclick="showScreen('pack')">Pack</button>
+<button onclick="showScreen('collection')">Collection</button>
+
+</nav>
+
+<section id="home" class="screen active">
+
+<h2>Welcome</h2>
+
+<p>Ether Core Web Edition</p>
+
+</section>
+
+
+<section id="battle" class="screen">
+
+<h2>Battle</h2>
+
+<div id="enemy-core">Enemy Core HP:20</div>
+
+<div class="board">
+
+<div class="lane" id="enemy-lane1"></div>
+<div class="lane" id="enemy-lane2"></div>
+<div class="lane" id="enemy-lane3"></div>
+
+</div>
+
+<div class="board">
+
+<div class="lane" id="player-lane1"></div>
+<div class="lane" id="player-lane2"></div>
+<div class="lane" id="player-lane3"></div>
+
+</div>
+
+<div id="hand"></div>
+
+<button onclick="endTurn()">End Turn</button>
+
+</section>
+
+
+<section id="pack" class="screen">
+
+<h2>Open Pack</h2>
+
+<button onclick="openPack()">Open</button>
+
+<div id="pack-result"></div>
+
+</section>
+
+
+<section id="collection" class="screen">
+
+<h2>Collection</h2>
+
+<div id="collection-grid"></div>
+
+</section>
+
+
+</div>
+
+<script src="cards.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
